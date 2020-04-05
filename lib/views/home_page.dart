@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/components/button_component.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -34,39 +35,9 @@ class HomePage extends StatelessWidget {
               width: 380,
             ),
             SizedBox(height: 22.0),
-            MaterialButton(
-              height: 48,
-              minWidth: 380,
-              shape: RoundedRectangleBorder(
-                borderRadius: new BorderRadius.circular(25),
-              ),
-              color: Color.fromRGBO(239, 54, 81, 1),
-              onPressed: () {},
-              child: Text(
-                'LOGIN',
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white,
-                ),
-              ),
-            ),
+            ButtonComponent('LOGIN'),
             SizedBox(height: 22.0),
-            MaterialButton(
-              height: 48,
-              minWidth: 380,
-              shape: RoundedRectangleBorder(
-                borderRadius: new BorderRadius.circular(25),
-              ),
-              color: Color.fromRGBO(239, 54, 81, 1),
-              onPressed: () {},
-              child: Text(
-                'CADASTRE-SE',
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white,
-                ),
-              ),
-            ),
+            ButtonComponent('CADASTRE-SE'),
             SizedBox(height: 70.0),
           ],
         ),
