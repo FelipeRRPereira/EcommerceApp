@@ -3,8 +3,8 @@ import 'package:ecommerce_app/components/field_component.dart';
 import 'package:ecommerce_app/components/link_component.dart';
 import 'package:flutter/material.dart';
 
-class SignupPage extends StatelessWidget {
-  const SignupPage({Key key}) : super(key: key);
+class LoginPage extends StatelessWidget {
+  const LoginPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class SignupPage extends StatelessWidget {
                 children: <Widget>[
                   SizedBox(height: 18.0),
                   Text(
-                    'Cadastre-se',
+                    'Login',
                     style: TextStyle(
                       color: Color.fromRGBO(246, 246, 246, 1),
                       fontWeight: FontWeight.w700,
@@ -35,15 +35,13 @@ class SignupPage extends StatelessWidget {
                   SizedBox(height: 73.0),
                   Column(
                     children: <Widget>[
-                      FieldComponent('Nome', TextInputType.text, null),
-                      SizedBox(height: 8.0),
                       FieldComponent(
                           'E-mail', TextInputType.emailAddress, null),
                       SizedBox(height: 8.0),
                       FieldComponent('Senha', null, null),
-                      LinkComponent('Já tem seu cadastro?'),
+                      LinkComponent('Esqueceu sua senha?'),
                       SizedBox(height: 30),
-                      ButtonComponent('CADASTRAR')
+                      ButtonComponent('LOGIN')
                     ],
                   )
                 ],

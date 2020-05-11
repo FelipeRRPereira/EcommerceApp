@@ -40,7 +40,7 @@ main() {
       await tester.pumpWidget(MaterialApp(home: SignupPage()));
 
       final buttonSignup = find.byWidgetPredicate((Widget widget) =>
-          widget is ButtonComponent && widget.label == 'Cadastrar');
+          widget is ButtonComponent && widget.label == 'CADASTRAR');
       expect(buttonSignup, findsOneWidget);
     });
   });
