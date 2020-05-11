@@ -43,7 +43,7 @@ class SignupPage extends StatelessWidget {
                       FieldComponent('Senha', null, null),
                       LinkComponent('Já tem seu cadastro?'),
                       SizedBox(height: 30),
-                      ButtonComponent('Cadastrar')
+                      ButtonComponent('CADASTRAR')
                     ],
                   )
                 ],
